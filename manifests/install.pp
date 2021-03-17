@@ -13,9 +13,9 @@ class syslog_ng::install {
     purge   => true,
     force   => true,
   }
-  if $::lsbdistcodename == 'stretch' {
+  if $::lsbdistid == 'Debian' {
     file { '/etc/syslog-ng/scl.conf':
-      source => 'puppet:///modules/syslog_ng/scl.conf.stretch',
+      source => 'puppet:///modules/syslog_ng/scl.conf.debian',
     }
   }
   else {

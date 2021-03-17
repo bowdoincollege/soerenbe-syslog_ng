@@ -3,6 +3,9 @@ class syslog_ng::params {
   if $::lsbdistcodename == 'stretch' {
     $version        = '3.8'
   }
+  elsif $::lsbdistcodename == 'buster' {
+    $version        = '3.19'
+  }
   else {
     $version        = '3.5'
   }
