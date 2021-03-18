@@ -1,3 +1,11 @@
+## 2021-03-17 Release 0.2.1
+###Summary
+
+Minor change to allow installation without errors on Debian 10.
+
+### Feature
+- Support Debian 10 (buster)
+
 ## 2017-03-13 Release 0.2.0
 ###Summary
 This release added features for plain config files and blocks.
